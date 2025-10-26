@@ -96,13 +96,6 @@ def fetch_skin_price(skin_name, skin_condition, skin_float=None):
             print(f"Estimated Market Price: {price_text}")
             print("-" * 30)
             
-            if sources:
-                print("Sources (up to 5):")
-                # Limit to 5 sources
-                for source in sources[:5]:
-                    print(f"- {source['title']}: {source['uri']}")
-            else:
-                print("No sources found.")
             return price_data
 
     except Exception as e:
