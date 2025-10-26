@@ -49,7 +49,7 @@ def get_outcome(input_skins, skins):
         for skin_name in outcomes:
             final_probabilities[skin_name] = [individual_skin_chance]
 
-    print(collection_to_outcomes)
+    # print(collection_to_outcomes)
     # FLOATTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
             
     # --- Step 1 & 2: Calculate Average Normalized Float ---
@@ -76,14 +76,14 @@ def get_outcome(input_skins, skins):
     
     # We iterate through the collections_to_outcomes to find
     # all unique possible outcomes
-    print("###################")
+    # print("###################")
     all_possible_outcomes = []
     for outcomes_list in collection_to_outcomes.values():
         
         all_possible_outcomes.extend(outcomes_list)
 
-    print(all_possible_outcomes)
-    print("###################")
+    # print(all_possible_outcomes)
+    # print("###################")
         
     # Remove duplicates just in case (though unlikely with this structure)
     # This is tricky with dicts. A better way is to just iterate and add.

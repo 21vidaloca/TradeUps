@@ -20,7 +20,7 @@ def parse_steam_price(price_str: str) -> float:
         return 0.0
 
 def get_skin_price(weapon_name: str, skin_name: str, condition: str) -> Optional[Dict[str, Any]]:
-    # print(f"Attempting to fetch price for: {weapon_name} | {skin_name} ({condition})")
+    print(f"Attempting to fetch price for: {weapon_name} | {skin_name} ({condition})")
 
     # --- START OF REAL API SECTION (Option 1) ---
     
